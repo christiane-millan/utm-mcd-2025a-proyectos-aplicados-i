@@ -2,10 +2,83 @@
 
 ## Web Scraping
 
+El web scraping es una técnica utilizada para extraer datos de sitios web de forma automatizada. A través de programas o scripts, se accede al contenido de una página web, se analiza su estructura HTML y se extrae información específica, como texto, imágenes, precios de productos, titulares de noticias, entre otros.
+
 ### HTML
 
+HTML (HyperText Markup Language) es el lenguaje estándar utilizado para estructurar y presentar contenido en la web. Es un lenguaje de marcado que define la estructura básica de las páginas web mediante etiquetas. Estas etiquetas indican al navegador cómo debe interpretar y mostrar el contenido, como texto, imágenes, enlaces, y otros elementos.
 
+Para realizar`*scraping* en un sitio web necesutaremos navegar en el código HTML para encontrar lo que nos interesa.
 
+Ejemplo de un código simple de HTML
+
+````html
+<html>
+	<body>
+		<div>
+			<p>Hello world!</p>
+			<p>Hello world!</p>
+		</div>
+			<p>Thanks for all!</p>
+	</body>
+</html>
+````
+
+Estructura de un documento HTML:
+
+	1.	<!DOCTYPE html>: Declara el tipo de documento como HTML5.
+	2.	<html>: Representa la raíz del documento.
+	3.	<head>: Contiene metadatos sobre el documento (como el título y enlaces a hojas de estilo).
+	4.	<body>: Incluye todo el contenido visible de la página.
+
+Algunas etiquetas comunes:
+
+1.	Encabezados: `<h1>` a `<h6>` para títulos y subtítulos. Ejemplo: `<h1>Encabezado principal</h1>`.
+2.	Párrafos: `<p>` para texto de párrafo. Ejemplo:`<p>Este es un texto.</p>`.
+3.	Enlaces: `<a href="URL">Texto del enlace</a>`.
+4.	Imágenes: `<img src="URL" alt="Descripción">`.
+5.	Listas:
+    - No ordenadas: `<ul>` con `<li>`.
+    - Ordenadas: `<ol>` con `<li>`.
+
+#### Árbol HTML
+
+Las etiquetas están anidadas unas dentro de otras, como las etiquetas `body`dentro de `html`. Esto da lugar a la jerarquía, que se representa como un árbol. 
+
+![tree-html](./img/example2-xpath-attr.png)
+
+#### Atributos 
+
+Ejemplo de un formato de los atributos de una etiqueta abstracto
+```html
+<tag-name attrib-name="attrib info">
+	..element contents
+</tag-name>
+````
+Las etiquetas __html__, __div__, y __p__ pueden contener atributos que proporcionan instrucciones especiales para el contenido incluido. 
+Los atributos están seguidos por un signo igual, seguido de información que es valor del atributo.
+
+Ejemplo específico de un __div__:
+````html
+<div id="unique-id" class="some class">
+	..div elemen contents
+</div>
+````
+
+El atributo `id` se utiliza como identificador único para el elemento de etiqueta.
+El atributo `class` también nos ayuda a identificar este `div` pero no es único. 
+No todas las etiquetas tienen un `id` o `class` pero a todas las etiquetas se les puede asignar ambos. 
+- Una etiqueta puede pertenecer a múltiples clases, cuando el atributo de clase tiene múltiples nombres de clases separados por espacios, en el ejemplo anterior la etiqueta `div` pertenece a las clases: `some` y `class`.
+Otro ejemplo:
+````html
+<a href="https://www.utm.mx">
+	Este es el link a la página de la universidad
+</a>
+````
+- La etiqueta `a` e` un hipervínculo, y tiene el atributo `href` que indica la pagina a la que se dirige la liga.
+- Existen muchos tipos de etiquetas permitidos 
+- Y muchos atributos que dependen del tipo de etiqueta.
+  
 ### XPath
 
 XPath (XML Path Language) es un lenguaje utilizado para navegar y seleccionar nodos en un documento XML. Permite localizar elementos, atributos, o texto dentro de un documento XML de manera eficiente, utilizando rutas y patrones específicos.
