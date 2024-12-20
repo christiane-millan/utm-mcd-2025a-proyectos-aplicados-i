@@ -1,4 +1,4 @@
-# Conprensión de los datos - Obtención de los datos
+# Comprensión de los datos - Obtención de los datos
 
 ## Web Scraping
 
