@@ -2,16 +2,6 @@
 
 ## Análisis Exploratorio de los Datos
 
-Pandas
-
-### Adquisición de los datos
-
-La adquisición de datos es el proceso a través del cual, el científico de datos obtiene los datos para procesarlos, analizarlos y visualizarlos. 
-
-Lectura de json y csv
-
-## Análisis Exploratorio de Datos
-
 Pandas 
 shape, head, tail
 Columnas y tipos de datos:Listar nombres de 
@@ -33,5 +23,4 @@ La reestructuración de datos tiene que ver con ver tu conjunto de datos desde d
 La transformación es muy útil para limpiar nuestro dataset y para dejarlo preparado para futuros análisis estadísticos, mientras que la reestructuración nos ayuda a entender mejor nuestro conjunto de datos y extraer información valiosa que pueda ser luego analizada o visualizada.
 
 
-
-[Ejemplo 3]()
+[Ejemplo 3](./excercise/exercise-3-transform.ipynb)

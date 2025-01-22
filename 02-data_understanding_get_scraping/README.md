@@ -987,3 +987,6 @@ Si se desea concatener el resultado a un archivo ya existen, sustituir `-O` por 
  ```
 
  Esto sobreescribira la especificación de `FEEDS` del archivo `settings.py` de existir.
+
+
+ > Codigo final de [`Bookspider`](./exercise/scraper/)
