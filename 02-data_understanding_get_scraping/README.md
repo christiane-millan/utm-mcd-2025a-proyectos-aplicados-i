@@ -962,3 +962,28 @@ Ejecutamos el scraper
 scrapy crawl bookspider -O cleandata.json  
 ```
 
+Si se desea concatener el resultado a un archivo ya existen, sustituir `-O` por `-o`. 
+
+## Databases 
+
+ En `setting.py` se puede utilizar `FEEDS` para especificar la forma de guardar la salida del proceso del *scraping*.
+
+ ```python
+ FEEDS = {
+    'booksdata.json' : {'format': 'json'}
+}
+ ```
+ 
+ Al agregar el segmento de código anterior, ya no sera necesario utilizar ´-O bookdata.json` para guardar los datos.
+
+ Otra forma de especificar la configuración para guardar los datos es en el código de la clase de nuestro Spider (`BookspiderSpider`), como un atributo más de la clase.
+
+ ```python
+ custom_settings = {
+    'FEEDS' {
+    'booksdata.json' : {'format' : 'json'}, 'overwrite' : True,
+    }
+}
+ ```
+
+ Esto sobreescribira la especificación de `FEEDS` del archivo `settings.py` de existir.
