@@ -14,7 +14,7 @@ Por: Christian Millán
 
 > Obtener y preparar la base de datos con la que se trabajará el proyecto a lo largo de todo el programa de estudios. - plan de estudios.
 
-> El alumno será capaz de aplicar los principios de la ciencia de datos para laformulación de proyectos de ciencia de datos bajo una metodología y la disponibilida de datos.  -Millán.
+> El alumno será capaz de aplicar los principios de la ciencia de datos para la formulación de proyectos de ciencia de datos bajo una metodología y la disponibilidad de datos.  -Millán.
 
 # Contenido
 
