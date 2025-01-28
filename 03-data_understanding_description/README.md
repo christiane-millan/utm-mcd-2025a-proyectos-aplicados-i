@@ -25,7 +25,7 @@ En esta etapa, la generación de estadísticas descriptivas para cada variable a
 - Distribución de frecuencia.
 - Proporción de cada categoría.
 
-[Ejemplo 1 Analisis de la etructura de los datos y resumen estadístico](./excercise/exercise-1-EDA.ipynb)
+[Ejemplo 1. Analisis de la etructura de los datos y resumen estadístico](./excercise/exercise-1-EDA.ipynb)
 
 
 ## Detección de valores faltantes
@@ -35,7 +35,7 @@ El objetivo es identificar la presencia de valores nulos o faltantes en uestros 
 - Determinar cuántos valores están faltando en cada columna.
 - Evaluar el impacto de los valores faltantes: ¿Son críticos para el análisis? ¿Es necesario imputarlos o eliminarlos?
 
-[Ejemplo 2](./excercise/exercise-2-clean.ipynb)
+[Ejemplo 2. Detección de faltantes](./excercise/exercise-2-clean.ipynb)
 
 ## Identificación de valores atípicos
 
@@ -73,9 +73,26 @@ Distribución de datos:
 Relaciones entre variables:
 - Diagramas de dispersión para pares de variables numéricas.
 - Mapas de calor para matrices de correlación.
+ 
+[Ejemplo 5](./excercise/exercise-5-distribution_data.ipynb)
 
+## Evaluación inicial de la calidad de los datos
 
-[Ejemplo 5]()
+Durante esta exploración, también es importante evaluar aspectos como:
+- Duplicados: Identificar si existen registros duplicados que podrían inflar los resultados del análisis.
+- Errores en los datos: Verificar si hay inconsistencias en los formatos (por ejemplo, fechas o unidades).
+- Homogeneidad de las variables categóricas: Asegurarse de que las categorías estén bien definidas y no haya errores de escritura.
+
+## Documentación de los hallazgos iniciales
+
+Todo lo aprendido durante la exploración inicial debe documentarse para referencia futura, especialmente si el equipo necesita validar los hallazgos. Algunos puntos importantes incluyen:
+
+- Estadísticas descriptivas clave de las variables.
+
+- Problemas detectados, como valores faltantes, outliers o inconsistencias.
+
+- Suposiciones iniciales sobre patrones encontrados en los datos.
+
 <!--
 ## Transformación, filtración y ordenamiento de datos
 

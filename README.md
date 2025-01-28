@@ -18,22 +18,24 @@ Por: Christian Millán
 
 # Contenido
 
-## Unidad 1. Definición del problema y obtención de los datos
+## Unidad 1. Comprensión del negocio
+Incluye temas de: *Unidad 1. Definición del problema y obtención de los datos*
 
 1. [Ambientes virtuales](./00-ambiente/README.md)
 2. [Obtención de datos mediante APIs](./01-data_understanding/get_data_api.ipynb)
 3. [Obtención de datos mediante Web Scraping](./02-data_understanding_get_scraping/README.md)
 4. [Obtención de datos de un DBMS]
 
-## Unidad 2. Descripción de los datos y Unidad 3. Creación de la base de datos
+## Unidad 2. Comprensión de los datos del negocio
+Incluye temas de: *Unidad 2. Limpieza de datos, Unidad 3. Creación de la base de datos y Unidad 4. Estadística descriptiva de la base de datos*
 
 1. [Análisis Exploratorio de los datos](./03-data_understanding_description/README.md)
 
 
-## Unidad 4. Estadística descriptiva de la base de datos
 
+  <!--
 1. [Estadísticos básicos]() 
-   <!--
+ 
 2. [Introducción a la visualización de datos]()
 3. [Exploración de variables categóricas y análisis multivariable]()
 4. [Correlaciones y Regreión Lineal Simple]()
